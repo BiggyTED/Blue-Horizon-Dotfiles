@@ -8,7 +8,7 @@ Terminals
 ![alt text](https://github.com/The-Evil-Dog/Blue-Horizon-Dotfiles/blob/master/screenshots/terminals.png?raw=true)
 
 # Installation
-Download i3-gaps, rofi, and polybar using your distribution's package manager or compiling from source. 
+Download i3-gaps, rofi, and polybar using your distribution's package manager or compiling from source. Then, clone the repository and replace your current folders with mine.
 
 **Arch Linux**
 ```bash
