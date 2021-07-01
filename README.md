@@ -1,4 +1,4 @@
-# Blue-Horizon-Dotfiles
+# About
 Dotfiles I created for my current i3-gaps setup! Currently contains dotfiles for i3, rofi, and polybar. I plan on adding more files in the future.
 
 # Images
