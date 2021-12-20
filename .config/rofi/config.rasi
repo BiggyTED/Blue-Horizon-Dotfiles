@@ -1,6 +1,0 @@
-configuration {
-	modi: "drun,keys";
-	terminal: "terminator";
-	show-icons: true;
-	theme: "TEDcolors";
-}

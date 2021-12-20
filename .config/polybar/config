@@ -6,20 +6,19 @@
 ;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
 ;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
 ;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
-;config author: https://github.com/The-Evil-Dog
-;project link: https://github.com/polybar/polybar
 ;==========================================================
 
 [colors]
 background = #00131c
 background-alt = #003B64
-iforeground = #F7F7F7
+foreground = #F7F7F7
 foreground-alt = #555
 primary = #81D3FF
 secondary = #e60053
 alert = #bd2c40
 
 [bar/topBar]
+monitor = ${env:MONITOR:}
 width = 100%
 height = 40
 radius = 0.0

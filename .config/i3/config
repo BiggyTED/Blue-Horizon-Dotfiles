@@ -4,22 +4,33 @@
 ### Basic setup ###
 set $mod Mod4
 
-
 ## Startup Applications ##
 
 # Polybar launch script
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
-# nm-applet startup
-exec --no-startup-id nm-applet
-
 # Picom startup
-exec_always picom --config /home/caleb/.config/i3/picom.conf
+exec picom --config /home/caleb/.config/i3/picom.conf
 
 # Flameshot (screenshot) startup
 exec flameshot
 
+# Redshift startup
+#exec redshift -l coordinates
+
 ### Startup Actions ###
+
+# Start multimonitor
+exec_always xrandr --output DP-0 --primary --rate 240.00 --output DP-4 --rate 240.00 --left-of DP-0
+
+# Set desktop wallpaper
+exec_always feh --bg-fill /home/caleb/.config/i3/wallpaper.jpg
+
+# Remove window titlebar
+for_window [class=".*"] border pixel 0
+
+# Set gaps
+gaps inner 20
 
 # Set desktop wallpaper
 exec_always feh --bg-fill /home/caleb/.config/i3/wallpaper.jpg
@@ -33,18 +44,18 @@ gaps inner 20
 ### Application start keybinds ###
 
 # Start rofi (program launcher)
-bindsym $mod+r exec rofi -show drun 
+bindsym $mod+r exec rofi -no-config -no-lazy-grab -show drun -modi drun -theme ~/.config/rofi/launcher.rasi 
 
-# start firefox
-bindsym $mod+b exec firefox
+# start Librewolf
+bindsym $mod+b exec librewolf
 
-# start terminator
-bindsym $mod+Return exec terminator
+# start terminal
+bindsym $mod+Return exec alacritty
 
-# start Lightcord
-bindsym $mod+x exec lightcord
+# start Telegram
+bindsym $mod+x exec telegram-desktop
 
-# screenshot w/ flameshot (GUI)
+# screenshot w/ Flameshot (GUI)
 bindsym $mod+p exec flameshot gui -p ~/Media
 
 # i3 lock
