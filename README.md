@@ -14,6 +14,3 @@ Download i3-gaps, rofi, and polybar using your distribution's package manager or
 ```bash
 yay -S i3-gaps polybar rofi
 ```
-
-# License
-My dotfiles are licensed under MIT.
