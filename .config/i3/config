@@ -52,8 +52,8 @@ bindsym $mod+b exec librewolf
 # start terminal
 bindsym $mod+Return exec alacritty
 
-# start Telegram
-bindsym $mod+x exec telegram-desktop
+# start Ferdi
+bindsym $mod+x exec ferdi
 
 # screenshot w/ Flameshot (GUI)
 bindsym $mod+p exec flameshot gui -p ~/Media
