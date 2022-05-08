@@ -2,7 +2,7 @@
 decorations: none
 
 # Make the background slightly transparent
-background_opacity: .9
+window.opacity: .1
 
 # Set the line scroll history
 history: 1000
